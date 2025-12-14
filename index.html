@@ -59,31 +59,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 </head>
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-<script>
-	(function () {
-		emailjs.init("02SHSR2w4g2FS_KGs"); // Public Key
-	})();
-
-	document.getElementById("contact-form").addEventListener("submit", function (e) {
-		e.preventDefault();
-
-		emailjs.sendForm(
-			"service_pwj1yqv",   // Service ID
-			"template_zcjiypr",   // Template ID
-			this
-		).then(
-			function () {
-				alert("تم إرسال الرسالة بنجاح ✅");
-			},
-			function (error) {
-				alert("حصل خطأ ❌");
-				console.log(error);
-			}
-		);
-	});
-</script>
 
 <body>
 
@@ -1091,6 +1067,32 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 
+
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+	<script>
+		(function () {
+			emailjs.init("02SHSR2w4g2FS_KGs"); // Public Key
+		})();
+
+		document.getElementById("contact-form").addEventListener("submit", function (e) {
+			e.preventDefault();
+
+			emailjs.sendForm(
+				"service_pwj1yqv",   // Service ID
+				"template_zcjiypr",   // Template ID
+				this
+			).then(
+				function () {
+					alert("تم إرسال الرسالة بنجاح ✅");
+				},
+				function (error) {
+					alert("حصل خطأ ❌");
+					console.log(error);
+				}
+			);
+		});
+	</script>
 </body>
 
 </html>
