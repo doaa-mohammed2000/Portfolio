@@ -1,0 +1,1096 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Doaa's Portofolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- FontAwesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+	(function () {
+		emailjs.init("02SHSR2w4g2FS_KGs"); // Public Key
+	})();
+
+	document.getElementById("contact-form").addEventListener("submit", function (e) {
+		e.preventDefault();
+
+		emailjs.sendForm(
+			"service_pwj1yqv",   // Service ID
+			"template_zcjiypr",   // Template ID
+			this
+		).then(
+			function () {
+				alert("تم إرسال الرسالة بنجاح ✅");
+			},
+			function (error) {
+				alert("حصل خطأ ❌");
+				console.log(error);
+			}
+		);
+	});
+</script>
+
+<body>
+
+	<div id="colorlib-page">
+		<div class="container-fluid">
+			<div id="colorlib-main">
+				<!------------------------ Slider --------------------------------->
+				<section id="colorlib-hero" class="js-fullheight" data-section="home">
+					<div class="flexslider js-fullheight">
+						<ul class="slides">
+							<li style="background: url('images/my-image.jpg') no-repeat right;		
+							width: 350px;  
+							height: 500px;
+							border-radius: 50px; 
+						">
+								<div class="overlay"></div>
+								<div class="container-fluid">
+									<div class="row">
+										<div
+											class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+											<div class="slider-text-inner js-fullheight">
+												<div class="desc">
+													<h1 style="color: #565553 ;">Hi! <br>I'm Doaa </h1>
+													<p>
+														<a class="btn btn-primary  btn-learn1" href="Doaa-Mohamed.pdf"
+															download="Doaa-Mohamed.pdf">
+															Download CV <i class="icon-download4"></i>
+														</a>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li style="padding-top: 10px;background:url(images/img_bg_2.jpg);background-size: cover;">
+								<div class="overlay"></div>
+								<div class="container-fluid">
+									<div class="row">
+										<div
+											class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+											<div class="slider-text-inner">
+												<div class="desc">
+													<h1 style="color: #335183">I am <br>a Web Developer</h1>
+													<p><a class="btn btn-primary btn-learn2">View Portfolio <i
+																class="icon-briefcase3"></i></a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!------------------------ About --------------------------------->
+				<section class="colorlib-about" data-section="about">
+					<div class="colorlib-narrow-content">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+									<div class="col-md-12">
+										<div class="about-desc">
+											<span class="heading-meta">About Me</span>
+											<h2 class="colorlib-heading" style="color: #335183;">Who Am I?</h2>
+											<p style="font-size: 13px;"><strong style="color: #335183;">Hi I'm Doaa
+													Mohamed Sayed</strong>
+												From Egypt ,Assiut Center, I graduated from the Faculty of Computers and
+												Information, Department of Bioinformatics, Assiut University in July
+												2023 with a GPA of 3.8 and an A in my graduation project.
+
+												During my studies, I attended some important events and courses in web
+												development.
+
+												After graduation, I joined (a 9-month) diploma in ITI(Information
+												Technology Institute) track Professional Web Development and BI, and
+												passed graduation project dissection. </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+										<div class="services color-1">
+											<span class="icon2"><i class="icon-bulb"></i></span>
+											<h3>Logo Design</h3>
+										</div>
+									</div>
+									<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+										<div class="services color-2">
+											<span class="icon2"><i class="icon-globe-outline"></i></span>
+											<h3>Web Design</h3>
+										</div>
+									</div>
+									<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+										<div class="services color-3">
+											<span class="icon2"><i class="icon-data"></i></span>
+											<h3>Software</h3>
+										</div>
+									</div>
+									<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+										<div class="services color-4">
+											<span class="icon2"><i class="icon-phone3"></i></span>
+											<h3>Website</h3>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="row">
+									<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+										<div class="hire">
+											<h2>I am happy to know you <br>that 100+ projects done sucessfully!</h2>
+											<a href="mailto:doaamohamed.makhlof@gmail.com" class="btn-hire">Hire me</a>
+
+										</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!------------------------ Numbers --------------------------------->
+				<!-- <div id="colorlib-counter" class="colorlib-counters"
+					style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+					<div class="overlay"></div>
+					<div class="colorlib-narrow-content">
+						<div class="row">
+						</div>
+						<div class="row">
+							<div class="col-md-3 text-center animate-box">
+								<span class="colorlib-counter js-counter" data-from="0" data-to="70" data-speed="5000"
+									data-refresh-interval="50"></span>
+								<span class="colorlib-counter-label">Cups of coffee</span>
+							</div>
+							<div class="col-md-3 text-center animate-box">
+								<span class="colorlib-counter js-counter" data-from="0" data-to="150" data-speed="5000"
+									data-refresh-interval="50"></span>
+								<span class="colorlib-counter-label">Projects</span>
+							</div>
+							<div class="col-md-3 text-center animate-box">
+								<span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000"
+									data-refresh-interval="50"></span>
+								<span class="colorlib-counter-label">Clients</span>
+							</div>
+							<div class="col-md-3 text-center animate-box">
+								<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000"
+									data-refresh-interval="50"></span>
+								<span class="colorlib-counter-label">Partners</span>
+							</div>
+						</div>
+					</div>
+				</div> -->
+
+				<!------------------------ Skills --------------------------------->
+				<section class="colorlib-skills" data-section="skills">
+					<div class="colorlib-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3  col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">My Specialty</span>
+								<h2 class="colorlib-heading animate-box">My Skills</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<p style="font-size: 14px;">As a front-end developer, I specialize in creating visually
+									engaging and highly
+									interactive user interfaces. My expertise lies in translating design concepts into
+									responsive and accessible web pages that deliver seamless experiences across all
+									devices.</p>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>HTML5</h3>
+									<div class="progress">
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
+											aria-valuemin="0" aria-valuemax="100" style="width:90%">
+											<span>90%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>CSS3</h3>
+									<div class="progress">
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="75"
+											aria-valuemin="0" aria-valuemax="100" style="width:75%">
+											<span>75%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>JS</h3>
+									<div class="progress">
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
+											aria-valuemin="0" aria-valuemax="100" style="width:70%">
+											<span>70%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>Bootstrap5</h3>
+									<div class="progress">
+										<div class="progress-bar color-4" role="progressbar" aria-valuenow="85"
+											aria-valuemin="0" aria-valuemax="100" style="width:85%">
+											<span>85%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>Angular18</h3>
+									<div class="progress">
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="75"
+											aria-valuemin="0" aria-valuemax="100" style="width:75%">
+											<span>75%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>ReactJS</h3>
+									<div class="progress">
+										<div class="progress-bar color-5" role="progressbar" aria-valuenow="65"
+											aria-valuemin="0" aria-valuemax="100" style="width:65%">
+											<span>65%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>WordPress</h3>
+									<div class="progress">
+										<div class="progress-bar color-5" role="progressbar" aria-valuenow="60"
+											aria-valuemin="0" aria-valuemax="100" style="width:60%">
+											<span>60%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>OOP</h3>
+									<div class="progress">
+										<div class="progress-bar color-6" role="progressbar" aria-valuenow="90"
+											aria-valuemin="0" aria-valuemax="100" style="width:90%">
+											<span>90%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!------------------------ Education --------------------------------->
+				<section class="colorlib-education" data-section="education">
+					<div class="colorlib-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">Education</span>
+								<h2 class="colorlib-heading animate-box">Education</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<div class="fancy-collapse-panel">
+									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingOne">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion"
+														href="#collapseOne" aria-expanded="true"
+														aria-controls="collapseOne">Master's Degree In Web Development
+													</a>
+												</h4>
+											</div>
+											<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+												aria-labelledby="headingOne">
+												<div class="panel-body">
+
+													<div>
+														<p style="font-size: 14px;">I have completed the Diploma
+															of<strong> Information
+																Technology
+																Institute</strong> (9 months) in Professional Web
+															Development and
+															Business Intelligence, during this period I studied all
+															the subjects that enabled me to create complete websites
+															and web pages, whether in terms of user interfaces or
+															the part dealing with databases.
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingTwo">
+											<h4 class="panel-title">
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+													href="#collapseTwo" aria-expanded="false"
+													aria-controls="collapseTwo">Bachelor Degree of Computer Science
+												</a>
+											</h4>
+										</div>
+										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+											aria-labelledby="headingTwo">
+											<div class="panel-body">
+												<p style="font-size: 14px;">I got my Bachelor in Computer Science from
+													the Faculty of Computers
+													and Information, <strong>Assiut University</strong>, Department of
+													Bioinformatics in
+													July 2023 with a GPA of <strong> 3.8</strong>
+												</p>
+												<ul>
+													<li>Graduation Project: A website to classify brain tumor
+														types(malignant or benign) and had a Grade: <strong> A</strong>
+														in its discussion.
+													</li>
+
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			</section>
+			<!------------------------ Work Experience --------------------------------->
+			<section class="colorlib-experience" data-section="experience">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+							data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Experience</span>
+							<h2 class="colorlib-heading animate-box">Work Experience</h2>
+							<h3 class="colorlib-heading animate-box">Freelancer</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="timeline-centered">
+								<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+									<div class="timeline-entry-inner">
+
+										<div class="timeline-icon color-1">
+											<i class="icon-pen2"></i>
+										</div>
+
+										<div class="timeline-label">
+											<h2><a href="#">Shopify Developer</a> <span>Nov2023-Dec2023</span></h2>
+											<p style="font-size: 14px;">Creating a full website on the Shopify platform.
+											</p>
+										</div>
+									</div>
+								</article>
+
+								<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+									<div class="timeline-entry-inner">
+
+										<div class="timeline-icon color-1">
+											<i class="icon-pen2"></i>
+										</div>
+
+										<div class="timeline-label">
+											<h2><a href="#">Wordpress Developer</a> <span>Jan2024-Apr2024</span></h2>
+											<p style="font-size: 14px;">Modifying the entire user interface for all
+												pages of the site for an
+												existing site and adding some features that were not previously
+												available for an existing site hosted on a server belonging to a Saudi
+												company.</p>
+										</div>
+									</div>
+								</article>
+
+
+								<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+									<div class="timeline-entry-inner">
+										<div class="timeline-icon color-2">
+											<i class="icon-pen2"></i>
+										</div>
+										<div class="timeline-label">
+											<h2><a href="#">Poster and Logo Designer</a>
+												<span>Apr2024-Now</span>
+											</h2>
+											<p>
+											<ul>
+												<li style="font-size: 14px;">designing attractive and creative logos for
+													any company or any
+													website. </li>
+												<li style="font-size: 14px;">creating or modifying posters like snap
+													posters.</li>
+											</ul>
+											</p>
+										</div>
+									</div>
+								</article>
+
+								<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+									<div class="timeline-entry-inner">
+										<div class="timeline-icon color-3">
+											<i class="icon-pen2"></i>
+										</div>
+										<div class="timeline-label">
+											<h2><a href="#">Frontend Developer</a> <span>Oct2023-Now</span></h2>
+											<p style="font-size: 14px;">creating attractive, well-designed ,and
+												responsive web pages for clients from different countries.</p>
+										</div>
+									</div>
+								</article>
+
+
+								<article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+									<div class="timeline-entry-inner">
+										<div class="timeline-icon color-none">
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!------------------------ Recent Work --------------------------------->
+			<section class="colorlib-work" data-section="work">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+							data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Work</span>
+							<h2 class="colorlib-heading animate-box">Recent Work</h2>
+						</div>
+					</div>
+
+					<!-- <nav class="navbar">
+						<ul class="nav">
+							<li class="nav-item"><a class="nav-link active" href="#" data-filter="all">All</a></li> 
+							 <li class="nav-item"><a class="nav-link" href="#" data-filter="web-design">Web Design</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="#" data-filter="apps">Apps</a></li>
+							<li class="nav-item"><a class="nav-link" href="#" data-filter="logo">Logos</a></li> 
+						</ul>
+					</nav> -->
+					<div class="row">
+						<!-- web1 -->
+						<div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft"
+							data-category="web-design">
+							<div class="project" style="background-image: url(images/web1.PNG);">
+								<div class="desc">
+									<div class="con">
+										<h3>Travelling</h3>
+										<span>Website</span>
+										<p class="icon">
+											<span>HTML5, CSS3, JS and JQuery</span>
+										</p>
+									</div>
+								</div>
+								<!-- Hidden video and GitHub icons -->
+								<div class="hover-icons">
+									<span><a href="https://github.com/doaa-mohammed2000/Travelling-website"><i
+												class="icon-github"></i></a></span>
+									<!-- Video Icon -->
+									<span class="icon-video" onclick="playVideo(this)"><i class="icon-play"></i></span>
+								</div>
+								<!-- Video Container -->
+								<div class="video-container">
+									<button class="video-close" onclick="closeVideo(this)">×</button>
+									<video class="card-video" controls>
+										<source src="images/web1.mp4" type="video/mp4">
+									</video>
+								</div>
+							</div>
+						</div>
+						<!-- web2 -->
+						<div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft"
+							data-category="web-design">
+							<div class="project" style="background-image: url(images/web2.PNG);">
+								<div class="desc">
+									<div class="con">
+										<h3>Hony</h3>
+										<span>Website</span>
+										<p class="icon">
+											<span>HTML, CSS</span>
+										</p>
+									</div>
+								</div>
+								<!-- Hidden video and GitHub icons -->
+								<div class="hover-icons">
+									<span><a href="https://github.com/doaa-mohammed2000/Hony-"><i
+												class="icon-github"></i></a></span>
+									<!-- Video Icon -->
+									<span class="icon-video" onclick="playVideo(this)"><i class="icon-play"></i></span>
+								</div>
+								<!-- Video Container -->
+								<div class="video-container">
+									<button class="video-close" onclick="closeVideo(this)">×</button>
+									<video class="card-video" controls>
+										<source src="images/web2.mp4" type="video/mp4">
+									</video>
+								</div>
+							</div>
+						</div>
+
+						<!-- web3 -->
+						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft" data-category="web-design">
+							<div class="project" style="background-image: url(images/web3.PNG);">
+								<div class="desc">
+									<div class="con">
+										<h3>E Commerce</h3>
+										<span>Website</span>
+										<p class="icon">
+											<span>HTML5, CSS3, JS</span>
+										</p>
+									</div>
+								</div>
+								<!-- Hidden video and GitHub icons -->
+								<div class="hover-icons">
+									<span><a href="https://github.com/doaa-mohammed2000/E-commerce"><i
+												class="icon-github"></i></a></span>
+									<!-- Video Icon -->
+									<span class="icon-video" onclick="playVideo(this)"><i class="icon-play"></i></span>
+								</div>
+								<!-- Video Container -->
+								<div class="video-container">
+									<button class="video-close" onclick="closeVideo(this)">×</button>
+									<video class="card-video" controls>
+										<source src="images/web3.mp4" type="video/mp4">
+									</video>
+								</div>
+							</div>
+						</div>
+						<!-- web4 -->
+						<div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft"
+							data-category="web-design">
+							<div class="project" style="background-image: url(images/web4.PNG);">
+								<div class="desc">
+									<div class="con">
+										<h3>Finding Job</h3>
+										<span>Website</span>
+										<p class="icon">
+											<span>Asp.Net MVC</span>
+										</p>
+									</div>
+								</div>
+								<!-- Hidden video and GitHub icons -->
+								<div class="hover-icons">
+									<span><a href="https://github.com/doaa-mohammed2000/MVC_Project"><i
+												class="icon-github"></i></a></span>
+									<!-- Video Icon -->
+									<span class="icon-video" onclick="playVideo(this)"><i class="icon-play"></i></span>
+								</div>
+								<!-- Video Container -->
+								<div class="video-container">
+									<button class="video-close" onclick="closeVideo(this)">×</button>
+									<video class="card-video" controls>
+										<source src="images/web4.mp4" type="video/mp4">
+									</video>
+								</div>
+							</div>
+						</div>
+						<!-- web5 -->
+						<div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft"
+							data-category="web-design">
+							<div class="project" style="background-image: url(images/web5.PNG);">
+								<div class="desc">
+									<div class="con">
+										<h3>Medicare</h3>
+										<span>Website</span>
+										<p class="icon">
+											<span>Angular17</span>
+										</p>
+									</div>
+								</div>
+								<!-- Hidden video and GitHub icons -->
+								<div class="hover-icons">
+									<span><a href="https://github.com/doaa-mohammed2000/Mdicare"><i
+												class="icon-github"></i></a></span>
+									<!-- Video Icon -->
+									<span class="icon-video" onclick="playVideo(this)"><i class="icon-play"></i></span>
+								</div>
+								<!-- Video Container -->
+								<div class="video-container">
+									<button class="video-close" onclick="closeVideo(this)">×</button>
+									<video class="card-video" controls>
+										<source src="images/web4.mp4" type="video/mp4">
+									</video>
+								</div>
+							</div>
+						</div>
+
+
+
+						<!-- app1 -->
+						<div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft" data-category="apps">
+							<div class="project" style="background-image: url(images/app1.PNG);">
+								<div class="desc">
+									<div class="con">
+										<h3>Supermarket Management</h3>
+										<span>Application</span>
+										<p class="icon">
+											<span>C Programming Language</span>
+										</p>
+									</div>
+								</div>
+								<!-- Hidden video and GitHub icons -->
+
+								<!-- Video Container -->
+								<div class="video-container">
+									<button class="video-close" onclick="closeVideo(this)">×</button>
+									<video class="card-video" controls>
+										<source src="images/App1.mp4" type="video/mp4">
+									</video>
+								</div>
+								<div class="hover-icons">
+									<span><a href="https://github.com/doaa-mohammed2000/stock-management"><i
+												class="icon-github"></i></a></span>
+									<!-- Video Icon -->
+									<span class="icon-video" onclick="playVideo(this)"><i class="icon-play"></i></span>
+								</div>
+							</div>
+						</div>
+						<!-- app2 -->
+						<div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft" data-category="apps">
+							<div class="project" style="background-image: url(images/app2.PNG);">
+								<div class="desc">
+									<div class="con">
+										<h3>Calculator</h3>
+										<span>Application</span>
+										<p class="icon">
+											<span>C# Windows Forms</span>
+										</p>
+									</div>
+								</div>
+								<!-- Hidden video and GitHub icons -->
+
+								<!-- Video Container -->
+								<div class="video-container">
+									<button class="video-close" onclick="closeVideo(this)">×</button>
+									<video class="card-video" controls>
+										<source src="images/App2.mp4" type="video/mp4">
+									</video>
+								</div>
+								<div class="hover-icons">
+									<span><a href="https://github.com/doaa-mohammed2000/Calculator"><i
+												class="icon-github"></i></a></span>
+									<!-- Video Icon -->
+									<span class="icon-video" onclick="playVideo(this)"><i class="icon-play"></i></span>
+								</div>
+							</div>
+						</div>
+
+						<!-- app3 -->
+						<div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft" data-category="apps">
+							<div class="project" style="background-image: url(images/app3.PNG);">
+								<div class="desc">
+									<div class="con">
+										<h3>Small Tasks</h3>
+										<span>Application</span>
+										<p class="icon">
+											<span>WPF</span>
+										</p>
+									</div>
+								</div>
+								<!-- Hidden video and GitHub icons -->
+
+								<!-- Video Container -->
+								<div class="video-container">
+									<button class="video-close" onclick="closeVideo(this)">×</button>
+									<video class="card-video" controls>
+										<source src="images/app3.mp4" type="video/mp4">
+									</video>
+								</div>
+								<div class="hover-icons">
+									<span><a href="https://github.com/doaa-mohammed2000/WPF-Tasks"><i
+												class="icon-github"></i></a></span>
+									<!-- Video Icon -->
+									<span class="icon-video" onclick="playVideo(this)"><i class="icon-play"></i></span>
+								</div>
+							</div>
+						</div>
+
+						<!-- app4 -->
+						<div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft" data-category="apps">
+							<div class="project" style="background-image: url(images/app4.PNG);">
+								<div class="desc">
+									<div class="con">
+										<h3>Bank Queue Management System</h3>
+										<span>Application</span>
+										<p class="icon">
+											<span>C++,OOP,DS</span>
+										</p>
+									</div>
+								</div>
+
+								<div class="video-container">
+									<button class="video-close" onclick="closeVideo(this)">×</button>
+									<video class="card-video" controls>
+										<source src="images/App4.mp4" type="video/mp4">
+									</video>
+								</div>
+								<div class="hover-icons">
+									<span><a href="https://github.com/doaa-mohammed2000/BQMS"><i
+												class="icon-github"></i></a></span>
+									<!-- Video Icon -->
+									<span class="icon-video" onclick="playVideo(this)"><i class="icon-play"></i></span>
+								</div>
+							</div>
+						</div>
+						<!-- logo1 -->
+						<div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft" data-category="logo">
+							<div class="project"
+								style="background-image: url(images/logo1.png); width: 500px; height: 300px;"
+								onclick="showOverlay(this)">
+							</div>
+						</div>
+						<div id="image-overlay" class="overlay">
+							<span class="closebtn" onclick="closeOverlay()">&times;</span>
+							<img id="enlarged-image" class="overlay-content">
+						</div>
+
+						<!-- logo2 -->
+						<div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft" data-category="logo">
+							<div class="project" onclick="showOverlayVideo(this)">
+								<video style="width: 500px; height: 300px;" class="card-video" autoplay muted loop>
+									<source src="images/logo2.mp4" type="video/mp4">
+								</video>
+							</div>
+						</div>
+
+
+
+
+
+						<!-- logo3 -->
+						<div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft" data-category="logo">
+							<div class="project"
+								style="background-image: url(images/Logo3.png); width: 500px; height: 300px;"
+								onclick="showOverlay(this)">
+							</div>
+						</div>
+						<div id="image-overlay" class="overlay">
+							<span class="closebtn" onclick="closeOverlay()">&times;</span>
+							<img id="enlarged-image" class="overlay-content">
+						</div>
+
+						<!-- logo4 -->
+						<!-- <div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft" data-category="logo">
+							<div class="project"
+								style="background-image: url(images/logo4.png); width: 500px; height: 300px;"
+								onclick="showOverlay(this)">
+							</div>
+						</div>
+						<div id="image-overlay" class="overlay">
+							<span class="closebtn" onclick="closeOverlay()">&times;</span>
+							<img id="enlarged-image" class="overlay-content">
+						</div> -->
+
+
+
+
+
+						<!-- logo5 -->
+						<!-- <div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft" data-category="logo">
+							<div class="project"
+								style="background-image: url(images/logo5.png); width: 500px; height: 300px;"
+								onclick="showOverlay(this)">
+							</div>
+						</div>
+						<div id="image-overlay" class="overlay">
+							<span class="closebtn" onclick="closeOverlay()">&times;</span>
+							<img id="enlarged-image" class="overlay-content">
+						</div> -->
+
+						<!-- logo6 -->
+						<!-- <div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft" data-category="logo">
+							<div class="project"
+								style="background-image: url(images/logo6.PNG); width: 500px; height: 300px;"
+								onclick="showOverlay(this)">
+							</div>
+						</div>
+						<div id="image-overlay" class="overlay">
+							<span class="closebtn" onclick="closeOverlay()">&times;</span>
+							<img id="enlarged-image" class="overlay-content">
+						</div> -->
+
+
+						<!-- logo7 -->
+						<div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft" data-category="logo">
+							<div class="project"
+								style="background-image: url(images/logo7.png); width: 500px; height: 300px;"
+								onclick="showOverlay(this)">
+							</div>
+						</div>
+						<div id="image-overlay" class="overlay">
+							<span class="closebtn" onclick="closeOverlay()">&times;</span>
+							<img id="enlarged-image" class="overlay-content">
+						</div>
+
+
+						<!-- logo8 -->
+						<!-- <div class="col-md-4 animate-box Work" data-animate-effect="fadeInLeft" data-category="logo">
+							<div class="project"
+								style="background-image: url(images/logo8.png); width: 500px; height: 300px;"
+								onclick="showOverlay(this)">
+							</div>
+						</div>
+						<div id="image-overlay" class="overlay">
+							<span class="closebtn" onclick="closeOverlay()">&times;</span>
+							<img id="enlarged-image" class="overlay-content">
+						</div> -->
+					</div>
+				</div>
+		</div>
+	</div>
+	</section>
+
+
+	<!------------------------ Certificates --------------------------------->
+	<section class="colorlib-blog" data-section="blog">
+		<div class="colorlib-narrow-content">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+					<span class="heading-meta">Read</span>
+					<h2 class="colorlib-heading">Recent Certificates</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+					<div class="blog-entry">
+						<a class="blog-img"><img src="images/cer1.jpg" style="height: 270px" class="img-responsive"></a>
+						<div class="desc">
+							<span><small>Oct, 2023 </small> | <small> Web Development </small></span>
+							<h3><a>ITI (9-month) deploma Graduation Certificate</a></h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+					<div class="blog-entry">
+						<a class="blog-img"><img src="images/cer2.PNG" class="img-responsive"></a>
+						<div class="desc">
+							<span><small>Aug, 2022 </small> | <small> Freelanceing Basics </small></span>
+							<h3><a>Maharatech Course in Freelancing </a></h3>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+					<div class="blog-entry">
+						<a class="blog-img"><img src="images/cer3.PNG" class="img-responsive"></a>
+						<div class="desc">
+							<span><small>Aug, 2022 </small> | <small> New Venture Conference </small></span>
+							<h3><a>Attended New Venture Conference </a></h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+					<div class="blog-entry">
+						<a class="blog-img"><img src="images/cer4.PNG" class="img-responsive"></a>
+						<div class="desc">
+							<span><small>Aug, 2021 </small> | <small> Innovegypt Training </small></span>
+							<h3><a></a>Completed A 45-hour Training Course </a></h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+					<div class="blog-entry">
+						<a class="blog-img"><img src="images/cer6.PNG" class="img-responsive"></a>
+						<div class="desc">
+							<span><small>Sep, 2021 </small> | <small> Machine Learning Exploration </small></span>
+							<h3><a>attended the Machine learning Exploration track in GDSC (Google Development Student
+									Clubs) Online </a></h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+					<div class="blog-entry">
+						<a class="blog-img"><img src="images/cer5.PNG" class="img-responsive"></a>
+						<div class="desc">
+							<span><small>Oct, 2022 </small> | <small> HTML And CSS Basics </small></span>
+							<h3><a>Maharatech Course in Html And CSS Basics </a></h3>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+
+	<!------------------------ Contact --------------------------------->
+	<section class="colorlib-contact" data-section="contact">
+		<div class="colorlib-narrow-content">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+					<span class="heading-meta">Get in Touch</span>
+					<h2 class="colorlib-heading">Contact</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="colorlib-icon">
+							<i class="icon-globe-outline"></i>
+						</div>
+						<div class="colorlib-text">
+							<p style="font-size: 15px;"><a>doaamohamed.makhlof@gmail.com</a></p>
+						</div>
+					</div>
+
+					<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="colorlib-icon">
+							<i class="icon-map"></i>
+						</div>
+						<div class="colorlib-text">
+							<p style="font-size: 15px;">Egypt,Assuit</p>
+						</div>
+					</div>
+
+					<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="colorlib-icon">
+							<i class="icon-phone"></i>
+						</div>
+						<div class="colorlib-text">
+							<p style="font-size: 15px;"><a href="tel://">+01143932811</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7 col-md-push-1">
+					<div class="row">
+						<div class="col-md-10  col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
+							<form id="contact-form">
+								<div class="form-group">
+									<input type="text" name="user_name" class="form-control" placeholder="Name"
+										required>
+								</div>
+
+								<div class="form-group">
+									<input type="email" name="user_email" class="form-control" placeholder="Email"
+										required>
+								</div>
+
+								<div class="form-group">
+									<input type="text" name="subject" class="form-control" placeholder="Subject">
+								</div>
+
+								<div class="form-group">
+									<textarea name="message" rows="7" class="form-control" placeholder="Message"
+										required></textarea>
+								</div>
+
+								<div class="form-group">
+									<button type="submit" class="btn btn-primary">Send Message</button>
+								</div>
+							</form>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+	<!-- Bootstrap JS (Include it at the end of the body) -->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
+</body>
+
+</html>
