@@ -1068,31 +1068,33 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 
 
-	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 	<script>
-		(function () {
-			emailjs.init("02SHSR2w4g2FS_KGs"); // Public Key
-		})();
+		document.addEventListener("DOMContentLoaded", function () {
 
-		document.getElementById("contact-form").addEventListener("submit", function (e) {
-			e.preventDefault();
+			emailjs.init("02SHSR2w4g2FS_KGs");
 
-			emailjs.sendForm(
-				"service_pwj1yqv",   // Service ID
-				"template_zcjiypr",   // Template ID
-				this
-			).then(
-				function () {
-					alert("تم إرسال الرسالة بنجاح ✅");
-				},
-				function (error) {
-					alert("حصل خطأ ❌");
-					console.log(error);
-				}
-			);
+			document.getElementById("contact-form").addEventListener("submit", function (e) {
+				e.preventDefault();
+
+				emailjs.send("service_pwj1yqv", "template_zcjiypr", {
+					user_name: this.user_name.value,
+					user_email: this.user_email.value,
+					subject: this.subject.value,
+					message: this.message.value,
+				})
+					.then(function () {
+						alert("تم إرسال الرسالة بنجاح ✅");
+					})
+					.catch(function (error) {
+						console.log("FAILED", error);
+						alert("حصل خطأ ❌");
+					});
+			});
+
 		});
 	</script>
+
 </body>
 
 </html>
