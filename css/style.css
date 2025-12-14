@@ -141,7 +141,7 @@ body {
 
 a {
   color: #335183;
-  ;
+
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -150,8 +150,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #335183;
-  ;
+  color: #fff;
   outline: none;
   text-decoration: none !important;
 }
